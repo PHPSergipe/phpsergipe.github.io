@@ -245,8 +245,10 @@ article img {
 
 footer {
   color: #FFF;
+  padding-top: 30px;
   height: 70px;
   background-color: #474996;
+  margin-top: 30px;
 }
 
 address {
@@ -264,4 +266,31 @@ blockquote {
   border-bottom: 1px dashed #CCC;
   padding: 10px 0;
   margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.article ul {
+  padding-left: 40px;
+}
+
+.article li {
+  list-style-type: circle;
+  padding-top: 10px;
+}
+
+.article li a {
+  color: #2867BB;
+  text-decoration: none;
+}
+
+.article p {
+  margin-bottom: 12px;
+}
+
+code {
+  border: 1px solid #999;
+  border-radius: 3px 3px;
+  font-size: 12px;
+  padding: 3px 10px;
+  background: #CCC;
 }
