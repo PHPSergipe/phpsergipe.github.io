@@ -8,9 +8,11 @@ layout: default
     <section>
         {% for post in site.posts %}
         <article class="margin-top float-left">
+            {% if post.image %}
             <div class="float-left w-30">
-                <img src="http://placephant.com/160/120?filter=bw">
+                <img src="{{ post.image}}" width="160" height="120">
             </div>
+            {% endif %}
             <div class="float-left w-70">
                 <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                 <p class="text-news">
