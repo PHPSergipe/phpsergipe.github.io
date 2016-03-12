@@ -2,6 +2,7 @@
 layout: post
 title:  "#1 PHPapo – Alexandre Gaigalas"
 date:   2013-03-25 13:44:04 -0300
+image:  /img/alganet.png
 categories: phpapo
 ---
 

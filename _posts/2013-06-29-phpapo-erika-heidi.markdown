@@ -2,6 +2,7 @@
 layout: post
 title:  "#4 PHPapo – Erika Heidi"
 date:   2013-06-29 13:44:04 -0300
+image:  /img/erika.jpg
 categories: phpapo
 ---
 

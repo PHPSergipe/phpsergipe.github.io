@@ -2,6 +2,7 @@
 layout: post
 title:  "#2 PHPapo – Augusto Pascutti"
 date:   2013-04-24 13:44:04 -0300
+image:  /img/augustohp.png
 categories: phpapo
 ---
 

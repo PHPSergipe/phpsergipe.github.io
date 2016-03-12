@@ -2,6 +2,7 @@
 layout: post
 title:  "#3 PHPapo – Rafael Dohms"
 date:   2013-05-20 13:44:04 -0300
+image:  /img/dohms.jpg
 categories: phpapo
 ---
 
