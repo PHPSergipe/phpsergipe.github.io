@@ -3,21 +3,25 @@ layout: default
 ---
 
 <div class="home">
+    <h3>Artigos</h3>
 
-  <h1 class="page-heading">Posts</h1>
+    <section>
+        {% for post in site.posts %}
+        <article class="margin-top float-left">
+            <div class="float-left w-30">
+                <img src="http://placephant.com/160/120?filter=bw">
+            </div>
+            <div class="float-left w-70">
+                <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <p class="text-news">
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                </p>
+            </div>
+        </article>
+        {% endfor %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="clear-float float-right button" href="{{ "/feed.xml" | prepend: site.baseurl }}">Inscrição via RSS</a>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </section>
 
 </div>

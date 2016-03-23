@@ -1,54 +1,267 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
-
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$text-color-light: #FFF;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Ubuntu', Verdana, Helvetica, Sans-Serif;
 }
 
+body {
+  background-color: #F7F7F7
+}
 
+/* Menu stylizer */
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+nav {
+  height: 60px;
+  margin-top: 20px;
+}
+
+nav a {
+  float: left;
+  color: #BCBDD1;
+  padding: 21px 8px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #FFFFFF
+}
+
+h3 {
+  font: 19px 'Ubuntu';
+  color: #52539C;
+  margin: 10px;
+  padding: 8px;
+  margin-left: 20px;
+}
+
+h2, h2 a {
+  font: 16px 'Ubuntu';
+  color: #57AB28;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  width: 94%;
+  padding: 3%;
+  float: left;
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+
+h4 {
+  font: 14px 'Ubuntu';
+  color: #52539C;
+  margin: 20px 0 20px 30px;
+  font-weight: bold;
+
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #f1f1f1;
+  padding: 0 10px 0 10px;
+}
+
+.text-news {
+  width: 400px;
+  color: #A2A2A2;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.button {
+  margin-top: 20px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: white;
+  background-color: #57AB28;
+  padding: 10px 35px;
+  border-radius: 5px;
+  font: 13px 'Ubuntu';
+}
+
+.box {
+  color: #8C8C8C;
+  width: 100%;
+  border: 1px solid #F3F3F5;
+  background: #FFF;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.facebook-box {
+  height: 345px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+.link-result {
+  color: #9393A9;
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* Abstract factories */
+.bc {
+  border-style: none;
+}
+
+.p-1 {
+  padding: 3%
+}
+
+.auto {
+  margin: 0 auto
+}
+
+.p-14 {
+  padding: 14px
+}
+
+.w-70 {
+  width: 70%
+}
+
+.w-50 {
+  width: 50%
+}
+
+.w-30 {
+  width: 30%
+}
+
+.ml-6 {
+  margin-left: 6%
+}
+
+.mt-16 {
+  margin-top: 16px
+}
+
+.mt-10 {
+  margin-top: 10px
+}
+
+.mt-5 {
+  margin-top: -5px
+}
+
+.mt-20 {
+  margin-top: 20px
+}
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+.mb-16 {
+  margin-bottom: 16px
+}
+
+.fs-14 {
+  font-size: 14px
+}
+
+.hi-26 {
+  height: 26px
+}
+
+.hi-30 {
+  height: 30px
+}
+
+.ml-125 {
+  margin-left: 125px
+}
+
+.center {
+  text-align: center
+}
+
+.border {
+  border: 8px solid #ACACAC
+}
+
+.bg-gray {
+  background: url(imagem/bg.png) repeat-x
+}
+
+.p-10-45 {
+  padding: 10px 45px
+}
+
+.violet-bg {
+  background: #474996
+}
+
+.float-left {
+  float: left
+}
+
+.border-box {
+  border: 1px solid #DEDDEB
+}
+
+.margin-top {
+  margin-top: 30px
+}
+
+.color-gray {
+  color: #9393A9
+}
+
+.float-right {
+  float: right
+}
+
+.margin-left {
+  margin-left: 30px
+}
+
+.clear-float {
+  clear: both
+}
+
+article img {
+  max-width: 100% !important;
+}
+
+.margin-top-38 {
+  margin-top: 38px
+}
+
+/* Container delimiter */
+.container {
+  max-width: 960px
+}
+
+footer {
+  color: #FFF;
+  height: 70px;
+  background-color: #474996;
+}
+
+address {
+  font-style: normal
+}
+
+blockquote {
+  color: #999;
+  font-style: italic;
+  padding: 14px 0;
+  text-align: center;
+}
+
+.article h1 {
+  border-bottom: 1px dashed #CCC;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}

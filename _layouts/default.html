@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body class="auto">
 
-    {% include header.html %}
+{% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<div class="container auto">
+    <div class="clear-float">
+        <img class="border mt-10" src="{{ site.baseurl }}/images/banner/banner-php.png" width="100%"/>
     </div>
 
-    {% include footer.html %}
+    <div class="float-left w-70">
+        {{ content }}
+    </div>
 
-  </body>
+    <aside class="float-left w-30 p-10">
+        <div class="box facebook-box ml-6">
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FPHP-Sergipe%2F296232240477531&amp;width&amp;height=358&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"
+                    scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:358px; width: 290px"
+                    allowTransparency="true">
+            </iframe>
+        </div>
+    </aside>
+</div>
+
+{% include footer.html %}
+
+</body>
 
 </html>

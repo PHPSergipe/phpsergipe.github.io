@@ -5,7 +5,7 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    background: rgb(33, 29, 58);
+    background: #FFFFFF;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -39,7 +39,7 @@
     }
 
     .page-link {
-        color: $text-color-light;
+        color: #000000;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -106,7 +106,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background-image: url(/images/footer-bg.png);
+    background: #454793;
 }
 
 .footer-heading {
@@ -122,9 +122,13 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: #FFFFFF;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+}
+
+.footer-col-wrapper a {
+    color: #B1A7B1;
 }
 
 .footer-col {
@@ -176,7 +180,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-image: url("/images/body-bg.png");
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/symphony.png) repeat;
 }
 
 .page-heading {
