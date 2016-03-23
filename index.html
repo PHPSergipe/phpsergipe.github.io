@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+    <h3>Artigos</h3>
+
+    <section>
+        {% for post in site.posts %}
+        <article class="margin-top float-left">
+            <div class="float-left w-30">
+                <img src="http://placephant.com/160/120?filter=bw">
+            </div>
+            <div class="float-left w-70">
+                <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <p class="text-news">
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                </p>
+            </div>
+        </article>
+        {% endfor %}
+
+        <a class="clear-float float-right button" href="{{ "/feed.xml" | prepend: site.baseurl }}">Inscrição via RSS</a>
+
+    </section>
+
+</div>

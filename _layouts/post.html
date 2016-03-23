@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h3>{{ page.title }}</h3>
+
+<section>
+    <article class="article margin-top float-left">
+
+        <div class="float-left">
+            <p class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b
+                    %-d, %Y" }}
+                </time>
+                {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">{{ page.author }}</span></span>{% endif %}
+            </p>
+
+            <p class="text-news">{{ content }}</p>
+
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </p>
+        </div>
+    </article>
+</section>
+

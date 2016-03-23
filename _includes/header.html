@@ -1,0 +1,27 @@
+<div class="container auto">
+    <a class="site-title logo" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/images/logo.png" width="180" alt="{{ site.title }}"/>
+    </a>
+    <img class="float-right margin-top-38" src="{{ site.baseurl }}/images/banner/banner-php.png" width="740"/>
+</div>
+
+<nav class="violet-bg">
+    <div class="container auto">
+        <ul class="float-left w-70">
+            <li><a class="page-link" href="{{ site.baseurl }}/">Home</a></li>
+            {% for my_page in site.pages %}
+                {% if my_page.title %}
+                    <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <ul class="float-right w-30">
+            <li><a href=""><img class="mt-5" src="imagem/face.png" width="30" heigth="30"/></a></li>
+            <li><a href=""><img class="mt-5" src="imagem/twitter.png" width="30" heigth="30"/></a></li>
+        </ul>
+    </div>
+</nav>
+
+
