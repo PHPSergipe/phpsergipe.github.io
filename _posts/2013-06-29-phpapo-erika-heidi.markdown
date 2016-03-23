@@ -15,7 +15,7 @@ categories: phpapo
 > Erika gosta de café, música, cerveja, séries, gifs animados, gatos e unicórnios,
 > não necessariamente nessa mesma ordem."
 
-# 5 melhores ferramentas cialis online para desenvolvimento em PHP?
+# 5 melhores ferramentas online para desenvolvimento em PHP?
 
 **1 - PHPStorm**: uma IDE bastante completa. Infelizmente não é gratuita e pode ser pesada para algumas máquinas, o que leva ao *próximo item da lista*:
 
